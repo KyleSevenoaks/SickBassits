@@ -1,0 +1,22 @@
+@media (max-width: 481px) {
+  section#main-wrap{
+    width: 100%;
+  }
+  
+  #header h1,
+  h1 img{
+  	width: 100%;
+  	float: none;
+  }
+  
+  nav
+  {
+  	display: none;
+  	float: none;
+  }
+  
+  .slider,
+  .navigator  {
+  	display: none;
+  }
+}

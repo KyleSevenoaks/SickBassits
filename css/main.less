@@ -1,0 +1,268 @@
+/*/// less variables ///*/
+
+@black: rgba(17, 17, 17, 1);
+@blackP9: rgba(17, 17, 17, .9);
+@white: rgba(228, 228, 228, 1);
+@whiteP9: rgba(228, 228, 228, .9);
+@blue: rgba(16, 105, 215, .9);
+@red: rgba(213, 20, 20, 1);
+@grey: rgba(142, 142, 142, 1);
+@grey-hover: rgba(142, 142, 142, .5);
+@satBlue: rgba(60, 59, 67, 1);
+
+/*/// main styles ///*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poiret One', cursive;
+}
+
+div {
+  padding: 10px;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+        font-size: 18px;
+}
+
+body {
+  background: @black url(../images/potBg.jpg) 50% 50% no-repeat fixed;
+}
+
+a {
+  color: @blue;
+  transition: all linear 0.1s;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  &:hover {
+    color: @satBlue;
+    transition: all linear 0.1s;
+  }
+  /*&:visited {
+   color: #111;
+  }*/
+}
+
+div#login {
+  float: right;
+  width: 20%;
+  text-align: right;
+  a {
+    color: @white;
+    &:first-child {
+      margin-right: 20px; 
+    }
+    &:hover {
+      color: @blue;
+    }
+  }
+}
+
+section#main-wrap {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  /*background: @whiteP9;*/
+  height: 100px;
+  margin-top: 20px;
+  nav {
+    float: left;
+    width: 50%;
+    ul {
+      width: 100%;
+      height: 88px;
+      padding: 0;
+      display: table;
+      li {
+        width: 25%;
+        height: 88px;
+        float: left;
+        width: 24%;
+        display: table-cell;
+        line-height: 75px;
+        text-align: center;
+      }
+      li a {
+        color: @white;
+        display: block;
+        width: 100%;
+        height: 88px;
+        line-height: 88px;
+        text-decoration: none;
+        text-transform: uppercase;
+       &:hover {
+          background: rgba(150, 150, 150, 1);
+        }
+      }
+    }
+  }
+  h1 {
+    float: left;
+    width: 50%;
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+ul::after/*,
+li:last-child*/ {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+
+section#main-content {
+  /*margin: 20px auto 0 auto;*/
+ div.article-list{
+      background: rgba(255, 255, 255, .1);  
+}
+ 
+article {
+    font-family: Tahoma, sans-serif;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    background-color: @whiteP9;
+      h2 {
+        font-size: 40px;
+        margin: 0 0 10px 0;
+        text-transform: capitalize;
+        a {
+          font-size: 40px;
+          font-family: 'Poiret One', cursive;
+          }
+        }     
+      h1 {
+        font-size: 50px;
+        margin: 20px 0;
+        text-transform: capitalize;
+      }
+      p {
+        
+        margin: 30px auto 30px auto;
+        width: 97%;
+      }
+      img {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+      }
+      &.actual {
+      }
+    }
+  }
+
+.read-more {
+    float: right;
+    margin: 10px;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 0;
+        display: block;
+        clear: both;
+    }
+}
+
+section#footer {
+  margin: 20px 0 0 0;
+  width: 100%;
+  background: @whiteP9;
+  font-family: 'Quicksand', sans-serif;
+  p {
+    float: left;
+    width: 50%;
+    &:last-of-type {
+      text-align: right;
+    }
+  }
+}
+
+/*/// comments ///*/
+
+#comments div {
+  margin: 20px 0 0 0;
+  background: @whiteP9;
+  width: 100%;
+  button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    height: 50px;
+    background: @white;
+    border: 0;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    &:hover {
+      background: @blue;
+    }
+  }
+  fieldset.comment-fieldset {
+    display: none;
+    input[type=text] {
+      width: 70%;
+      height: 50px;
+      margin: 0 10px 0 0;
+      border: 0; 
+      padding: 10px;
+    }
+    input[type=submit] {
+      width: 28%;
+      height: 50px;
+      border: 0; 
+      padding: 10px;
+      cursor: pointer;
+      transition: all linear 0.1s;
+       &:hover {
+      background: @blue;
+    }
+    }
+  }
+  p {
+    margin: 10px 0 0 0;
+    &.posted-by {
+      color: @red;
+    }
+    &.comment {
+      text-indent: 10px;
+    }
+  }
+}
+
+span.clear {
+  display: block;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+
+#header.fixed {
+  position: fixed;
+  top: 0;
+  width: 960px;
+  margin: 0 auto;
+  background: @blackP9;
+  height: 88px;
+  z-index: 99999;
+  transition: background linear 0.5s;
+}
