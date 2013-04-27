@@ -12,7 +12,7 @@
 .caption {
 	position: absolute;
 	right: 0;
-	top: 10px;
+	top: 0;
 	width: 40%;
 	height: 100%;
 	background: rgba(17, 17, 17, .9);
@@ -37,6 +37,7 @@
     bottom: 5px;
     text-align: center;
     background: rgba(17, 17, 17, .7);
+    padding: 10px;
 }
 .navigator .item {
     margin: 0 1px;
