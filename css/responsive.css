@@ -1,10 +1,20 @@
 @media (max-width: 481px) {
+	
+	body {
+		background: #333;
+	}
   section#main-wrap{
     width: 100%;
   }
   
+  div#login{
+  	float: none;
+  	width: 100%;
+  }
+  
   #header h1,
   h1 img{
+  	height: 75px;
   	width: 100%;
   	float: none;
   }
@@ -19,4 +29,59 @@
   .navigator  {
   	display: none;
   }
+  
+  #header {
+  	height: auto;
+  	margin: 0;	
+  }
+  
+  #header h1 img {
+  	margin: 10px 0 0 15px;
+  }
+  
+  #header.fixed {
+  	height: 50px;
+  	margin: 0;
+  }
+  
+  #header.fixed h1 {
+  	height: 50px;
+  	width: 25%;
+  	margin: 5px 0 0 -20px;
+  }
+  
+   #header.fixed h1 img {
+   	height: 50px;
+   	
+   }
+   
+   section#main-content {
+   	margin: 0;
+   }
+   
+   h1,
+   h1 a,
+   section#main-content article h1 {
+   	font-size: 35px;
+   	margin: 0;
+   }
+   
+   p {
+   	font-size: 14px;
+   	margin: 10px 0 10px 0;
+   }
+   
+   #comments div fieldset.comment-fieldset input[type=text],
+   #comments div fieldset.comment-fieldset input[type=submit]
+   {
+   	width: 100%;
+   }
+   
+   section#footer p,
+   section#footer p:last-of-type  
+   {
+   	width: 100%;
+   	float: none;
+   	text-align: center;
+   }
 }
