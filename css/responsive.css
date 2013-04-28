@@ -37,10 +37,14 @@
   	margin: 0;	
   }
   
+  #header h1 {
+  	overflow: hidden;
+  }
+  
   #header h1 img {
-  	/*position: relative;
+  	position: relative;
 	left: 20px;
-	top: 10px;*/
+	top: 10px;
   }
   
   #header.fixed {
@@ -58,6 +62,7 @@
    #header.fixed h1 img {
    	height: 50px;
    	margin: 0;
+   	position: static;
    }
    
    section#main-content {
