@@ -15,6 +15,12 @@ $(function(){
 		$(".contact-form").show();
 	});
 	
+	$("#contact button.submit").click( function(e){
+		e.preventDefault; //only for the dummy page, not for uCMS interation
+		$(this).parents(".contact-form").hide();
+		$(".success").show();
+	});
+	
 	$(".slider-wrapper").uSlide({
 	    speed: 1000,
 	    delay: 7000,
