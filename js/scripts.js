@@ -3,7 +3,7 @@ $(function(){
 		document.location.href="index.html";
 	})
 	
-	$("aside.read-more, article.actual img, #login").after("<span class='clear'></span>");
+	$("aside.read-more, article.actual img, #login, button.mobile-menu").after("<span class='clear'></span>");
 	
 	$(".make-comment-container button").click( function(){
 		$(this).hide();
@@ -30,5 +30,9 @@ $(function(){
 	});
 	
 	$("#header").sticky({topSpacing: 0});
+	
+	$("button.mobile-menu").click( function(){
+		$("nav").fadeToggle('fast');
+	});
 	
 });

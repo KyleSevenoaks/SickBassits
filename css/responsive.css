@@ -49,6 +49,7 @@
   	height: 50px;
   	width: 25%;
   	margin: 5px 0 0 -20px;
+  	float: left;
   }
   
    #header.fixed h1 img {
@@ -84,5 +85,54 @@
    	width: 100%;
    	float: none;
    	text-align: center;
+   }
+   
+   section#footer #contact .contact-form label {
+   	display: none;
+   }
+   
+   section#footer #contact .contact-form input[type=text],
+   section#footer #contact .contact-form input[type=submit],
+   section#footer #contact .contact-form button.submit {
+   	width: 100%;
+   	float: none;
+   	margin: 0 auto;
+   }
+   section#footer #contact .contact-form button.submit {
+   	margin-top: 10px;
+   }
+   
+   #header button.mobile-menu {
+   	display: block;
+   }
+   
+   #header nav {
+   	display: none;
+   	position: absolute;
+   	width: 100px;
+   	height: 480px;
+   	left: 0;
+   	top: 0;
+   	background: #111;
+   }
+   
+   #header nav ul {
+   	height: 100%;
+   	display: block;
+   	background: #111;
+   }
+   
+   #header nav ul li {
+   	float: none;
+   	width: 100%;
+   	display: block;
+   	background: #111;
+   }
+   
+   #header.fixed button.mobile-menu {
+   	display: block;
+   	width: 10%;
+   	float: left;
+   	margin-top: 7px;
    }
 }
