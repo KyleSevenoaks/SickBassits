@@ -35,4 +35,10 @@ $(function(){
 		$("nav").fadeToggle('fast');
 	});
 	
+	var pHolderMail = "Email address";
+	var pHolderMessage = "Type your message";
+	
+	$("input[name=message]").attr('placeholder', pHolderMessage);
+	$("input[name=email]").attr('placeholder', pHolderMail);
+	
 });
