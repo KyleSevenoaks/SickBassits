@@ -10,6 +10,11 @@ $(function(){
 		$(".comment-fieldset").show();
 	});
 	
+	$("#contact button").click( function(){
+		$(this).hide();
+		$(".contact-form").show();
+	});
+	
 	$(".slider-wrapper").uSlide({
 	    speed: 1000,
 	    delay: 7000,
