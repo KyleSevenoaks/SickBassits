@@ -101,6 +101,7 @@
    
    section#footer #contact .contact-form input[type=text],
    section#footer #contact .contact-form input[type=submit],
+   section#footer #contact .contact-form textarea,
    section#footer #contact .contact-form button.submit {
    	width: 100%;
    	float: none;
