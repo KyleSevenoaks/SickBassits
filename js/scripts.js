@@ -16,7 +16,7 @@ $(function(){
 	});
 	
 	$("#contact button.submit").click( function(e){
-		e.preventDefault; //only for the dummy page, not for uCMS interation
+		//e.preventDefault; only for the dummy page, not for uCMS integration
 		$(this).parents(".contact-form").hide();
 		$(".success").show();
 	});
