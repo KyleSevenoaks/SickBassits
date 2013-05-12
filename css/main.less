@@ -4,6 +4,7 @@
 @blackP9: rgba(17, 17, 17, .9);
 @white: rgba(228, 228, 228, 1);
 @whiteP9: rgba(228, 228, 228, .9);
+@realWhite: rgba(255, 255, 255, 1);
 @blue: rgba(16, 105, 215, .9);
 @red: rgba(213, 20, 20, 1);
 @grey: rgba(142, 142, 142, 1);
@@ -158,7 +159,7 @@ article {
     font-family: Tahoma, sans-serif;
     margin: 20px 0 0 0;
     padding: 10px;
-    background-color: @whiteP9;
+    background-color: @realWhite;
       h2 {
         font-size: 40px;
         margin: 0 0 10px 0;
@@ -169,8 +170,10 @@ article {
         }     
       h1 {
         font-size: 50px;
-        margin: 20px 0;
+        margin: 20px auto;
+        width: 80%;
         text-transform: capitalize;
+        text-align: center;
         a {
           font-family: 'Vollkorn', serif;
           color: @black;
