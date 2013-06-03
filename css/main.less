@@ -43,7 +43,8 @@ p {
 }
 
 body {
-  background: @black url(../images/potBg.jpg) 50% 50% no-repeat fixed;
+  background: @black url(../images/spector_bg.jpg) 50% 5% no-repeat fixed;
+  background-size: 100%;
 }
 
 a {
@@ -151,9 +152,15 @@ li:last-child*/ {
 
 section#main-content {
   /*margin: 20px auto 0 auto;*/
+  min-height: 70%;
  div.article-list{
       background: rgba(255, 255, 255, .1);  
 }
+ 
+ p:only-child,
+ div:only-child {
+   height: 100%;
+ }
  
 article {
     font-family: Tahoma, sans-serif;
